@@ -1,0 +1,4 @@
+<app-event-detail *ngIf="!overviewMode; else showOverview"></app-event-detail>
+<ng-template #showOverview>
+    <app-overview></app-overview>
+</ng-template>
