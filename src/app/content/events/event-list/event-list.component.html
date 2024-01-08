@@ -1,1 +1,18 @@
-<app-event-item></app-event-item>
+<div class="row">
+    <div class="col-xs-6" *ngFor="let event of events">
+        <a href="#" class="list-group-item clearfix">
+            <div class="row">
+                <span class="col-xs-4">
+                    <img [src]="event.imagePath" alt="" class="img-responsive" style="max-height: 90px;">
+                </span>
+                <div class="col-xs-8">
+                    <h4 class="list-group-item-heading">{{event.name}}</h4>
+                    <p class="list-group-item-text">{{event.location}}</p>
+                    <p class="list-group-item-text">{{event.date | date:'mediumDate'}}</p>
+                    <p class="list-group-item-text">{{event.date | date:'shortTime'}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <app-event-item></app-event-item>
+</div>
