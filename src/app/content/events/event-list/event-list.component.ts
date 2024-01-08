@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { EventItemComponent } from './event-item/event-item.component';
 
 @Component({
   selector: 'app-event-list',
   standalone: true,
-  imports: [],
+  imports: [
+    EventItemComponent
+  ],
   templateUrl: './event-list.component.html',
   styleUrl: './event-list.component.css'
 })
