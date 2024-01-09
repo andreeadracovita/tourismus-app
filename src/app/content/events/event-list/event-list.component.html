@@ -6,10 +6,10 @@
                     <img [src]="event.imagePath" alt="" class="img-responsive" style="max-height: 90px;">
                 </span>
                 <div class="col-xs-8">
-                    <h4 class="list-group-item-heading">{{event.name}}</h4>
-                    <p class="list-group-item-text">{{event.location}}</p>
-                    <p class="list-group-item-text">{{event.date | date:'mediumDate'}}</p>
-                    <p class="list-group-item-text">{{event.date | date:'shortTime'}}</p>
+                    <p class="list-group-item-text">{{ event.category }}</p>
+                    <h4 class="list-group-item-heading">{{ event.name }}</h4>
+                    <p class="list-group-item-text">{{ event.location }}</p>
+                    <p class="list-group-item-text">{{ event.date | date:'shortTime' }}</p>
                 </div>
             </div>
         </a>

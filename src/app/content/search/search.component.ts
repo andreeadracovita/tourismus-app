@@ -38,6 +38,5 @@ export class SearchComponent {
         this.selectedCategories.splice(index, 1);
       }
     }
-    console.log(this.selectedCategories);
   }
 }
